@@ -1,0 +1,8 @@
+Task:
+    1.  Create a class, which consist of methods of writing
+        and reading collection (lab_6) to/from file:
+            1)  as an object (whole collection);
+            2)  as a group of objects (of generic type from lab_5);
+            3)  as a group of objects translated into text format.
+    2. Write JUnit-tests to check all methods work result and exceptions.
+    3. The code should be written following JCC.
