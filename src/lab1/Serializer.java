@@ -1,9 +1,7 @@
 package lab1;
 
-import lab1.adapter.MyCollectionSerializeAdapter;
-import lab1.adapter.TrainSerializeAdapter;
+import lab1.model.lab5.Train;
 import lab1.model.lab6.MyCollection;
-import lab1.adapter.SerializeAdapterFactory;
 import lab1.validator.SerializeValidator;
 import lab1.utils.SerializeUtils;
 
@@ -55,9 +53,7 @@ public class Serializer {
             return false;
         }
 
-        MyCollectionSerializeAdapter adapter = SerializeAdapterFactory.create(collection);
-
-        return SerializeUtils.writeCollectionToBinFile(adapter, fileName);
+        return SerializeUtils.writeCollectionToBinFile(collection, fileName);
     }
 
     public static boolean serializeAsObjectsGroup(MyCollection collection, String fileName) {
@@ -65,9 +61,7 @@ public class Serializer {
             return false;
         }
 
-        TrainSerializeAdapter[] adapters = SerializeAdapterFactory.create(collection.toArray());
-
-        return SerializeUtils.writeObjectsToBinFile(adapters, fileName);
+        return SerializeUtils.writeObjectsToBinFile((Train[]) collection.toArray(), fileName);
     }
 
     public static boolean serializeAsText(MyCollection collection, String fileName) {
@@ -75,12 +69,10 @@ public class Serializer {
             return false;
         }
 
-        TrainSerializeAdapter[] adapters = SerializeAdapterFactory.create(collection.toArray());
-
-        return SerializeUtils.writeObjectsToTextFile(adapters, fileName);
+        return SerializeUtils.writeObjectsToTextFile((Train[]) collection.toArray(), fileName);
     }
 
-    public MyCollection deserializeAsCollection(String fileName) {
+    public static MyCollection deserializeAsCollection(String fileName) {
         if (!SerializeValidator.isValid(fileName)) {
             return null;
         }
@@ -88,7 +80,7 @@ public class Serializer {
         return SerializeUtils.readCollectionFromBinFile(fileName);
     }
 
-    public MyCollection deserializeAsObjectsGroup(String fileName) {
+    public static MyCollection deserializeAsObjectsGroup(String fileName) {
         if (!SerializeValidator.isValid(fileName)) {
             return null;
         }
@@ -96,7 +88,7 @@ public class Serializer {
         return SerializeUtils.readObjectsFromBinFile(fileName);
     }
 
-    public MyCollection deserializeAsText(String fileName) {
+    public static MyCollection deserializeAsText(String fileName) {
         if (!SerializeValidator.isValid(fileName)) {
             return null;
         }

@@ -10,12 +10,13 @@ package lab1.model.lab5;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.io.Serializable;
 import java.util.HashMap;
 
 /**
  * Created by Alexey_O on 23.05.2017.
  */
-public class Train implements Comparable<Train> {
+public class Train implements Comparable<Train>, Serializable {
     /**
     * This class is parent fo such classes as:
     *   - CargoTrain class;
@@ -220,5 +221,13 @@ public class Train implements Comparable<Train> {
         Train train = (Train) o;
 
         return getNumOfVagons() == train.getNumOfVagons();
+    }
+
+
+    @Override
+    public String toString() {
+        return "Train{" +
+                "numOfVagons=" + numOfVagons +
+                '}';
     }
 }

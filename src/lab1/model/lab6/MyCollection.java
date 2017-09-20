@@ -11,6 +11,8 @@ package lab1.model.lab6;
 import lab1.model.lab5.Train;
 import org.jetbrains.annotations.NotNull;
 
+import java.io.Serializable;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Set;
@@ -18,7 +20,7 @@ import java.util.Set;
 /**
  * Created by Alexey_O on 03.06.2017.
  */
-public class MyCollection implements Set<Train> {
+public class MyCollection implements Set<Train>, Serializable {
     /**
      * This class contains structure and methods
      * to organize collection (type of collection: Set-List;
@@ -29,6 +31,19 @@ public class MyCollection implements Set<Train> {
     private int size = 0;
     private Node head;
     private Node tail;
+
+    public MyCollection() {
+    }
+
+    public MyCollection(Train[] trains) {
+        if (trains == null || trains.length < 1) {
+            return;
+        }
+
+        for (Train train: trains) {
+            this.add(train);
+        }
+    }
 
     /**
      * Returns the number of elements in this collection (its cardinality).
@@ -412,6 +427,19 @@ public class MyCollection implements Set<Train> {
         size = 0;
     }
 
+
+
+    @Override
+    public String toString() {
+        Train[] trains = (Train[]) this.toArray();
+        if (trains != null && trains.length > 0) {
+            return Arrays.toString(trains);
+        }
+        return null;
+    }
+
+
+
     /**
      * Returns element of collection by int index.
      *
@@ -474,7 +502,7 @@ public class MyCollection implements Set<Train> {
     *
     * Copyrights: none.
     * */
-    class Node {
+    class Node implements Serializable {
         /**
          * Class of list node.
          * Organises whole list structure
