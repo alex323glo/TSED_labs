@@ -8,7 +8,7 @@ package com.lab111.labwork2;
  * */
 public class C2 implements I2 {
 
-    C3 c3;
+    public C3 c3;
 
     /**
      * Realisation of meth2() logic from I2 interface, which prints

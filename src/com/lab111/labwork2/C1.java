@@ -9,8 +9,8 @@ package com.lab111.labwork2;
  * @see C2
  * */
 public class C1 extends C2 implements I1 {
-    I1 i1;
-    I2 i2;
+    public I1 i1;
+    public I2 i2;
 
     /**
      * Realisation of meth1() logic from I1 interface, which prints
