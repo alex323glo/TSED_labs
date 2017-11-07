@@ -1,7 +1,7 @@
 package com.lab111.labwork3.v1;
 
 /**
- * Realisation of variable element (Leaf). Supports Element interface.
+ * Realisation of variable element (Leaf). Supports com.lab111.labwork3.v3.Element interface.
  * @author Alexey O.
  * @version 1.0
  *
@@ -39,7 +39,7 @@ public class Variable implements Element {
     }
 
     /**
-     * Realisation of show() method, implemented from Element interface.
+     * Realisation of show() method, implemented from com.lab111.labwork3.v3.Element interface.
      * @return name field.
      * @see Element
      * */

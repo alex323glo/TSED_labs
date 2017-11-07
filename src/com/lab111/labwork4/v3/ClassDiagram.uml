@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="139.75" y="0.0">com.lab111.labwork4.RastrImage</node>
+    <node x="0.0" y="411.0">com.lab111.labwork4.RastrImageFactory</node>
+    <node x="0.0" y="173.0">com.lab111.labwork4.RectImage</node>
+    <node x="221.0" y="104.0">com.lab111.labwork4.Dot</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lab111.labwork4.RectImage" target="com.lab111.labwork4.RastrImage">
+      <point x="0.0" y="-62.0" />
+      <point x="100.5" y="79.0" />
+      <point x="173.0" y="79.0" />
+      <point x="-33.25" y="27.0" />
+    </edge>
+    <edge source="com.lab111.labwork4.Dot" target="com.lab111.labwork4.RastrImage">
+      <point x="0.0" y="-131.0" />
+      <point x="312.0" y="79.0" />
+      <point x="239.5" y="79.0" />
+      <point x="33.25" y="27.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="0.5" y="380.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

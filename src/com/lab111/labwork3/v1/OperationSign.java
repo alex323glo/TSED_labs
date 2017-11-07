@@ -1,7 +1,7 @@
 package com.lab111.labwork3.v1;
 
 /**
- * Realisation of operation sign (Leaf). Supports Element interface.
+ * Realisation of operation sign (Leaf). Supports com.lab111.labwork3.v3.Element interface.
  * @author Alexey O.
  * @version 1.0
  *
@@ -42,7 +42,7 @@ public class OperationSign implements Element {
     }
 
     /**
-     * Realisation of show() method, implemented from Element interface.
+     * Realisation of show() method, implemented from com.lab111.labwork3.v3.Element interface.
      * @return String version of sign field.
      * @see Element
      * @see Sign

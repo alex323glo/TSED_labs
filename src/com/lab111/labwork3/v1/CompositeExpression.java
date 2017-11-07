@@ -1,7 +1,7 @@
 package com.lab111.labwork3.v1;
 
 /**
- * Realisation of composite expression (Composite). Supports Element interface.
+ * Realisation of composite expression (Composite). Supports com.lab111.labwork3.v3.Element interface.
  * Aggregates SimpleExpression (Composite) and OperationSign (Leaf) classes.
  * @author Alexey O.
  * @version 1.0
@@ -83,7 +83,7 @@ public class CompositeExpression implements Element {
     }
 
     /**
-     * Realisation of show() method, implemented from Element interface.
+     * Realisation of show() method, implemented from com.lab111.labwork3.v3.Element interface.
      * @return String, which contains substrings - results of calling show() method
      * of aggregated classes (OperationSign and SimpleExpression).
      * @see Element
@@ -92,7 +92,7 @@ public class CompositeExpression implements Element {
      * */
     @Override
     public String show() {
-        return "CompositeExpression: {" +
+        return "com.lab111.labwork3.v3.CompositeExpression: {" +
                 firstExpression.show() + " " +
                 operationSign.show() + " " +
                 secondExpression.show() +

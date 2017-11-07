@@ -1,8 +1,8 @@
 package com.lab111.labwork3.v1;
 
 /**
- * Realisation of simple expression (Composite). Supports Element interface.
- * Aggregates Element class (Leaf).
+ * Realisation of simple expression (Composite). Supports com.lab111.labwork3.v3.Element interface.
+ * Aggregates com.lab111.labwork3.v3.Element class (Leaf).
  * @author Alexey O.
  * @version 1.0
  *
@@ -43,9 +43,9 @@ public class SimpleExpression implements Element {
     }
 
     /**
-     * Realisation of show() method, implemented from Element interface.
+     * Realisation of show() method, implemented from com.lab111.labwork3.v3.Element interface.
      * @return String, which contains substring - result of calling show() method
-     * of aggregated class (Element).
+     * of aggregated class (com.lab111.labwork3.v3.Element).
      * @see Element
      * */
     @Override

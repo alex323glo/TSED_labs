@@ -8,6 +8,10 @@ package com.lab111.labwork3.v1;
  * */
 public interface Element {
 
+    /**
+     * Shows whole content of current element.
+     * @return com.lab111.labwork3.v3.Element's content, represented as String.
+     * */
     String show();
 
 }

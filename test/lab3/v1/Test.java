@@ -1,4 +1,4 @@
-package lab3;
+package lab3.v1;
 
 import com.lab111.labwork3.v1.*;
 
