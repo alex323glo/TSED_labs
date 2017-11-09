@@ -12,18 +12,7 @@ package com.lab111.labwork8;
  */
 public abstract class Leaf implements GraphicElement {
 
-    private static int leafCounter = 0;
-    private int leafNumber;
-
     private String type;
-
-    /**
-     * Default constructor override.
-     * Increments Leaf class objects static counter.
-     * */
-    public Leaf() {
-        leafNumber = leafCounter++;
-    }
 
     /**
      * Getter of type field.
@@ -50,7 +39,7 @@ public abstract class Leaf implements GraphicElement {
      */
     @Override
     public String show() {
-        return "Leaf(" + leafNumber + ") {" + type + "}";
+        return "Leaf(" + this.hashCode() + ") {" + type + "}";
     }
 
     /**

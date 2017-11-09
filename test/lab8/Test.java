@@ -17,8 +17,10 @@ public class Test {
         composite2.addElement(composite1);
         composite2.addElement(new SimplyCloneableLeaf("leaf3"));
 
+        System.out.println("________________________________________________________________");
         System.out.println("composite2:\n" + composite2.show());
         System.out.println("composite2 (clone):\n" + ((Composite) composite2.clone()).show());
+        System.out.println("----------------------------------------------------------------");
 
 
         // Deeply cloneable structure:
@@ -29,8 +31,10 @@ public class Test {
         composite4.addElement(composite3);
         composite4.addElement(new DeeplyCloneableLeaf("leaf6"));
 
+        System.out.println("________________________________________________________________");
         System.out.println("composite4:\n" + composite4.show());
         System.out.println("composite4 (cloned):\n" + ((Composite) composite4.clone()).show());
+        System.out.println("----------------------------------------------------------------");
 
 
         // Deeply and Simply cloneable structure:
@@ -41,8 +45,10 @@ public class Test {
         composite6.addElement(composite5);
         composite6.addElement(new DeeplyCloneableLeaf("leaf9"));
 
+        System.out.println("________________________________________________________________");
         System.out.println("composite6:\n" + composite6.show());
         System.out.println("composite6 (cloned):\n" + ((Composite) composite6.clone()).show());
+        System.out.println("----------------------------------------------------------------");
     }
 
 }

@@ -15,19 +15,14 @@ import java.util.List;
  */
 public abstract class Composite implements GraphicElement {
 
-    private static int compositeCounter = 0;
-    private int compositeNumber;
-
     private List<GraphicElement> graphicElements;
 
     /**
      * Default constructor override.
-     * Assigns graphicElements List and increments
-     * Composite class objects static counter.
+     * Assigns graphicElements List.
      * */
     public Composite() {
         graphicElements = new ArrayList<>();
-        compositeNumber = compositeCounter++;
     }
 
     /**
@@ -84,7 +79,7 @@ public abstract class Composite implements GraphicElement {
      */
     @Override
     public String show() {
-        StringBuilder stringBuilder = new StringBuilder("Composite(" + compositeNumber + ") {");
+        StringBuilder stringBuilder = new StringBuilder("Composite(" + this.hashCode() + ") {");
         for (int i = 0; i < graphicElements.size(); i++) {
             stringBuilder.append(graphicElements.get(i).show());
             if (i < graphicElements.size() - 1) {
