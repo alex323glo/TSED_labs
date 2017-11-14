@@ -1,4 +1,4 @@
-package com.lab111.labwork3.v3;
+package com.lab111.labwork3;
 
 /**
  * Composite expression, which aggregates Expression class and OperationSign.

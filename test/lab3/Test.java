@@ -1,6 +1,9 @@
-package lab3.v3;
+package lab3;
 
-import com.lab111.labwork3.v3.*;
+import com.lab111.labwork3.CompositeExpression;
+import com.lab111.labwork3.Constant;
+import com.lab111.labwork3.OperationSign;
+import com.lab111.labwork3.Variable;
 
 /**
  * Created by alex323glo on 26.10.17.

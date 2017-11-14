@@ -1,6 +1,9 @@
 package lab4;
 
-import com.lab111.labwork4.v4.*;
+import com.lab111.labwork4.Coords;
+import com.lab111.labwork4.DotPool;
+import com.lab111.labwork4.FlyweightDot;
+import com.lab111.labwork4.RectImage;
 
 /**
  * Created by alex323glo on 02.11.17.

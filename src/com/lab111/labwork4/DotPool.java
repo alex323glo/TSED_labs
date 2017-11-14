@@ -1,4 +1,4 @@
-package com.lab111.labwork4.v4;
+package com.lab111.labwork4;
 
 import java.awt.*;
 import java.util.HashMap;

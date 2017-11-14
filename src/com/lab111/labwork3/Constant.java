@@ -1,4 +1,4 @@
-package com.lab111.labwork3.v3;
+package com.lab111.labwork3;
 
 /**
  * Created by alex323glo on 26.10.17.

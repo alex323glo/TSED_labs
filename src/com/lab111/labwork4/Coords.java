@@ -1,4 +1,4 @@
-package com.lab111.labwork4.v4;
+package com.lab111.labwork4;
 
 /**
  * Class of coordinates (X and Y) of Dot. Stands for

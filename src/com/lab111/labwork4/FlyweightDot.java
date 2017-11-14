@@ -1,4 +1,4 @@
-package com.lab111.labwork4.v4;
+package com.lab111.labwork4;
 
 /**
  * Flyweight object class, used instead of heavy object.

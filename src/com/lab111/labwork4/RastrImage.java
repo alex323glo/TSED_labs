@@ -1,4 +1,4 @@
-package com.lab111.labwork4.v4;
+package com.lab111.labwork4;
 
 /**
  * Rastr Image logic general interface.
