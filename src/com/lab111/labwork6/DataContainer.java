@@ -1,5 +1,14 @@
 package com.lab111.labwork6;
 
+/**
+ * General interface for data container.
+ * Supports parametrization of stored data.
+ *
+ * @author alex323glo
+ * @version 1.0.0
+ *
+ * @see Comparable
+ * */
 public interface DataContainer<T extends Comparable<T>> {
 
     /**

@@ -5,7 +5,14 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by alex323glo on 15.11.17.
+ * Realisation of data container interface (DataContainer interface) based on
+ * String data type. Supports parametrization of stored data.
+ *
+ * @author alex323glo
+ * @version 1.0.0
+ *
+ * @see DataContainer
+ * @see String
  */
 public class StringContainer implements DataContainer<String> {
 

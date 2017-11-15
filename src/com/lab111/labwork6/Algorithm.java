@@ -6,6 +6,8 @@ package com.lab111.labwork6;
  *
  * @author alex323glo
  * @version 1.0.0
+ *
+ * @see Comparable
  * */
 public interface Algorithm<T extends Comparable<T>> {
 
